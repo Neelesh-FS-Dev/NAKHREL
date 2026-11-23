@@ -1,0 +1,3 @@
+# Concept website. Add a Sitemap line here once the production domain is known.
+User-agent: *
+Allow: /

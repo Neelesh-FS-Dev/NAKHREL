@@ -1,0 +1,59 @@
+/*
+ * NAKHREL design tokens.
+ * Colour values were sampled from the supplied logo reveal (cream ground,
+ * burgundy wordmark, terracotta birds). Sage is estimated from the vine.
+ * Components must use these semantic variables, never raw hex values.
+ */
+:root {
+  /* Surfaces */
+  --color-canvas: #f3ebdc;
+  --color-surface: #fbf6ec;
+  --color-surface-deep: #ead9c6;
+
+  /* Ink and accents */
+  --color-ink: #292324;
+  --color-ink-muted: #6b5e5c;
+  --color-primary: #582028;
+  --color-accent-soft: #e8b9a4;
+  --color-accent-rose: #c88f8d;
+  --color-accent-terracotta: #b8705a;
+  /* Darker terracotta for small text: passes 4.5:1 on the ivory ground */
+  --color-accent-terracotta-text: #8f4f3a;
+  --color-accent-gold: #b69662;
+  --color-botanical: #6f7660;
+
+  /* Lines and states */
+  --color-line: rgb(88 32 40 / 0.18);
+  --color-line-strong: rgb(88 32 40 / 0.4);
+  --color-focus: #582028;
+  --color-danger: #8a1f2b;
+  --color-success: #3f5a3c;
+
+  /* Type */
+  --font-display: "Bodoni Moda Variable", "Bodoni 72", Didot, Georgia, serif;
+  --font-body: "Manrope Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-display-xl: clamp(3.25rem, 8.2vw, 8.5rem);
+  --fs-display-l: clamp(2.5rem, 5.4vw, 5.25rem);
+  --fs-display-m: clamp(1.85rem, 3.4vw, 3.1rem);
+  --fs-body-l: clamp(1.05rem, 1rem + 0.25vw, 1.25rem);
+  --fs-body: clamp(0.98rem, 0.95rem + 0.12vw, 1.08rem);
+  --fs-label: 0.72rem;
+  --lh-display: 0.98;
+  --lh-body: 1.65;
+  --tracking-label: 0.22em;
+
+  /* Layout */
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --max-width: 1440px;
+  /* One side of the gap between sections: total space between two sections is twice this */
+  --section-space: clamp(4.5rem, 7vw, 6.5rem);
+  --header-h: 76px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 220ms;
+  --dur-hover: 320ms;
+  --dur-reveal: 900ms;
+  --dur-page: 500ms;
+}
